@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.background {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('/Users/sidhantmathur/Documents/Uber/views/banner.jpg');
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+.login {
+    border-radius: 10%;
+    left: 390px;
+    width: 360px;
+    height: 570px;
+    position: relative;
+    margin: 6% auto;
+    background: #fff;
+    padding: 5px;
+    overflow: hidden;
+}

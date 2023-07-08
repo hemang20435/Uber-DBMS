@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+  <style>
+    form label {
+        line-height: 12px;
+    }
+    .container{
+      text-align: right;
+      font-family:monospace;
+      
+    }
+    #head1 {
+        background: black;
+        color: white;
+        
+        /* text-align: center; */
+        /* width: 120px; */
+        /* object-position: 50px 30px; */
+    }
+    #piccab {
+      object-position: 50px 30px;
+    }
+    .header {
+      padding: 60px;
+      text-align: center;
+      background: black;
+      color: white;
+      font-size: 100px;
+    }
+    .leftside {
+      height: 50vh;
+      width: 100%;
+    }
+    
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>UBER</h1>
+    <!-- <p>My supercool header</p> -->
+  </div>
+
+  <div class="row">
+
+    <div class="column">
+      <div class="leftside">
+        <img src="ola-02.webp" alt="cabpic" id="piccab">
+      </div>
+    </div>
+
+
+    <div class="column">
+      <div class="rightside">
+        <form action="/register" method="POST">
+
+
+          <div class="container">
+      
+      
+            <!-- <div id="head1"><h1>UBER</h1></div> -->
+            <p>Please fill in this form to create an account.</p>
+            <hr>
+        
+            <label for="username"><b>Name</b></label>
+            <input type="text" placeholder="Enter Name" name="name" id="email" required>
+            <br>
+            <br>
+            <label for="psw"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="username" id="username" required>
+            <br>
+            <br>
+            <label for="psw"><b>Phone Number</b></label>
+            <input type="text" placeholder="Enter PhoneNumber" name="phone" id="phone" required>
+            <br>
+            <br>
+            <label for="psw"><b>Age</b></label>
+            <input type="text" placeholder="Enter Age" name="age" id="age" required>
+            <br>
+            <br>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="password" id="psw" required>
+            <br>
+            <hr>
+        
+            <p>By creating an account you agree to our <a href="index2.html">Terms & Privacy</a>.</p>
+            <button type="submit" class="registerbtn">Sign Up</button>
+      
+      
+          </div>
+        
+          <div class="container signin">
+            <p>Already have an account? <a href="http://localhost:3000/login">Sign in</a>.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  
+  
+</body>
+</html>

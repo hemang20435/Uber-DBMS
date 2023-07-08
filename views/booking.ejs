@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+</head>
+
+<body>
+    <h1> <b>Please Select your Ride</b> </h1>
+
+    <% if(data.length){ for(var i=0; i< data.length; i++) {%>
+        <tr>
+            <th scope="row">
+               <b><%= (i+1) %>. </b>  
+            </th>
+            <td>
+              <b>Name: </b> <%= data[i].username%>
+            </td>
+            <td>
+               <b>Current Location: </b> <%= data[i].current_location%>
+            </td>
+            <td>
+               <b>License Number: </b> <%= data[i].license_number%>
+            </td>
+            <td>
+               <b>Capacity: </b> <%= data[i].Occupency%>
+            </td>
+            <!-- <td>
+                <a class="btn btn-success edit" href="../users/edit/<%=data[i].id%>">Edit</a>
+            </td> -->
+            <br>
+        </tr>
+        <% } }else{ %>
+            <tr>
+                <td colspan="3">No user</td>
+            </tr>
+            <% } %>
+
+        <h3>Enter the Name of the Driver You want to Book</h3>
+        <form action="/customer/booking" method="POST">
+            <input type="text" name="username">
+            <select name="mode" id="mode">
+                <option value="Cash">Cash</option>
+                <option value="UPI">UPI</option>
+                <option value="Card">Card</option>
+              </select>
+            <button>Submit</button>
+        </form>
+
+</body>
+
+</html>
